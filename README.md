@@ -3,14 +3,14 @@
 A Python implementation of the paper *Semi-Supervised Learning with Measure Propagation*:
 > Subramanya, Amarnag, and Jeff Bilmes. "Semi-supervised learning with measure propagation." Journal of Machine Learning Research 12.Nov (2011): 3311-3370.
 
-This implementation works on Python 3 and follows the [scikit-learn API](http://scikit-learn.org/stable/developers/contributing.html#apis-of-scikit-learn-objects).
+This implementation works on Python 3 and follows the [scikit-learn API](https://scikit-learn.org/stable/modules/classes.html).
 
 ## Installation
 I strongly recommend to use a [virtualenv](https://virtualenv.pypa.io/en/stable/) in order not to break anything of your current enviroment.
 
 Open a terminal and type the following line, it will install the package using pip:
 
-    pip install git+git://bitbucket.org/albertbup/measure-propagation.git
+    pip install git+git://github.com/albertbup/measure-propagation.git
 
 ## Usage
 The following snippet (extracted from **circles.py**) would give you the gist of how to use it:
