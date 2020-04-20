@@ -33,7 +33,9 @@ labels = -np.ones(n_samples, dtype=np.int32)  # -1 is set for unlabeled data poi
 labels[0] = outer
 labels[-1] = inner
 
-# create a nearest neighbor graph
+# create graph with input data
+# here we build a nearest neighbor graph because data do not inherently have a graph structure,
+# otherwise you may just import the Graph class and add edges directly (check webkb.py file)
 K = 4
 graph = KNNGraph(K, similarity.euclidean_similarity).build(X)
 
