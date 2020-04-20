@@ -45,8 +45,10 @@ mp = MeasurePropagationSklearn(0.1,
                                2e-2,
                                100)
 
-# run algorithm
+# train algorithm
 mp.fit(graph, labels)
+
+# evaluate
 output_labels = mp.predict()
 print("Accuracy %f" % accuracy_score(y, output_labels))
 ```
