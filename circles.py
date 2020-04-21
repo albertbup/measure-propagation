@@ -28,10 +28,10 @@ K = 4
 graph = KNNGraph(K, similarity.euclidean_similarity).build(X)
 
 # create measure propagation
-mp = MeasurePropagationSklearn(0.1,
-                               0.01,
-                               2e-2,
-                               100)
+mp = MeasurePropagationSklearn(mu=0.1,
+                               nu=0.01,
+                               tol=2e-2,
+                               max_iter=100)
 
 # run algorithm
 start = time.time()
